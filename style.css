@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-family: lato, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 15px;
+    font-family: lato, sans-serif;
+}
+
+#sketch-container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 10px;
+}
+
+.footer {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    border: 1px solid black;
+    border-radius: 2.5px;
+    background-color: grey;
+    color: black;
+    padding: 5px 15px;
+    font-family: lato, sans-serif;
+    font-weight: bold;
+}
+
+.buttons:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
