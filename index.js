@@ -1,3 +1,5 @@
+let color;
+
 document.addEventListener('DOMContentLoaded', () => {
     createSketchBoard(16);
 
@@ -20,6 +22,9 @@ function createSketchBoard(size) {
     for(let i = 0; i < numOfDivs; i++){
         let newSquare = document.createElement('div');
         newSquare.style.border = "1px solid black";
+        newSquare.addEventListener('mouseover', divColor/*() => {
+            newSquare.style.backgroundColor = "black";
+        }*/)
         sketchBoard.appendChild(newSquare)
     }
 }
@@ -35,4 +40,23 @@ function changeSize(){
         submitFeedback.innerHTML = "Let's begin!"
         return newSize;
     }
+}
+
+function chooseColor(colorChoice) {
+    color = colorChoice
+}
+
+function divColor(){ 
+    if (color == 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+    } else {
+        this.style.backgroundColor = "black"
+    }
+}
+
+function resetSketchPad() {
+    const squares = document.querySelectorAll('div');
+    squares.forEach((div) => {
+        div.style.backgroundColor= "white"
+    })
 }
