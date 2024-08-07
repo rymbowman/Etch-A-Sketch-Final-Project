@@ -22,7 +22,6 @@ function createSketchBoard(size) {
 
     for(let i = 0; i < numOfDivs; i++){
         let newSquare = document.createElement('div');
-        newSquare.style.border = "1px solid black";
         newSquare.addEventListener('mouseover', divColor)
         sketchBoard.appendChild(newSquare)
     }
