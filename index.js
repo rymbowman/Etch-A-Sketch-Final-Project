@@ -35,7 +35,7 @@ function changeSize(){
     } else if (newSize < 1 || newSize > 100) {
         submitFeedback.innerHTML = "Please make sure to submit an integer between 1 and 100."
     } else {
-        submitFeedback.innerHTML = "Let's begin!"
+        submitFeedback.innerHTML = "Draw Away!"
         return newSize;
     }
 }

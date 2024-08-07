@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap');
 
 body {
     display: flex;
@@ -10,7 +11,8 @@ body {
 
 h1 {
     margin-bottom: 0px;
-    font-family: lato, sans-serif;
+    font-family: silkscreen, sans-serif;
+    font-size: 40px;
 }
 
 .header {
@@ -19,7 +21,7 @@ h1 {
     align-items: center;
     width: 500px;
     gap: 15px;
-    font-family: lato, sans-serif;
+    font-family: silkscreen, sans-serif;
     background-color: beige;
 }
 
@@ -42,13 +44,12 @@ h1 {
 }
 
 .buttons {
-    border: 1px solid black;
     border-radius: 2.5px;
     background-color: grey;
     color: black;
     padding: 5px 15px;
-    font-family: lato, sans-serif;
-    font-weight: bold;
+    font-family: silkscreen, sans-serif;
+    font-weight: 500;
 }
 
 .buttons:hover {
@@ -57,14 +58,14 @@ h1 {
 }
 
 #user-click-ability {
-    width: 350px;
+    width: 400px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: lato, sans-serif;
-    font-style: italic;
-    margin: 0;
+    font-family: silkscreen, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
