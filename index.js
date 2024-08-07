@@ -23,9 +23,7 @@ function createSketchBoard(size) {
     for(let i = 0; i < numOfDivs; i++){
         let newSquare = document.createElement('div');
         newSquare.style.border = "1px solid black";
-        newSquare.addEventListener('mouseover', divColor/*() => {
-            newSquare.style.backgroundColor = "black";
-        }*/)
+        newSquare.addEventListener('mouseover', divColor)
         sketchBoard.appendChild(newSquare)
     }
 }
@@ -65,7 +63,7 @@ function resetSketchPad() {
 }
 
 document.querySelector('body').onclick = function(e) {
-    if(e.target != document.getElementsByClassName('buttons')) {
+    if(e.target.tagName != 'BUTTON') {
         click = !click;
         let clickabilityMessage = document.querySelector('#user-click-ability')
         if(click) {
