@@ -57,7 +57,7 @@ function divColor(){
 function resetSketchPad() {
     const squares = document.querySelectorAll('div');
     squares.forEach((div) => {
-        div.style.backgroundColor= "white"
+        div.style.backgroundColor= "beige"
     })
 }
 

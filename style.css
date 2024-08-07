@@ -20,6 +20,7 @@ h1 {
     width: 500px;
     gap: 15px;
     font-family: lato, sans-serif;
+    background-color: beige;
 }
 
 #sketch-container {
@@ -37,6 +38,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 40px;
+    background-color: beige;
 }
 
 .buttons {
