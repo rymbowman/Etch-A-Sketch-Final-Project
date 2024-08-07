@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    background-color: beige;
 }
 
 h1 {
@@ -51,5 +52,17 @@ h1 {
 .buttons:hover {
     cursor: pointer;
     filter: brightness(120%);
+}
+
+#user-click-ability {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: lato, sans-serif;
+    font-style: italic;
+    margin: 0;
 }
 

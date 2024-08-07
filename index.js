@@ -1,4 +1,5 @@
 let color;
+let click = false;
 
 document.addEventListener('DOMContentLoaded', () => {
     createSketchBoard(16);
@@ -46,12 +47,14 @@ function chooseColor(colorChoice) {
     color = colorChoice
 }
 
-function divColor(){ 
-    if (color == 'random') {
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-    } else {
-        this.style.backgroundColor = "black"
-    }
+function divColor(){
+    if (click) {
+        if (color == 'random') {
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+        } else {
+            this.style.backgroundColor = "black"
+        }
+    } 
 }
 
 function resetSketchPad() {
@@ -60,3 +63,14 @@ function resetSketchPad() {
         div.style.backgroundColor= "white"
     })
 }
+
+document.querySelector('body').onclick = function(e) {
+    if(e.target != document.getElementsByClassName('buttons')) {
+        click = !click;
+        let clickabilityMessage = document.querySelector('#user-click-ability')
+        if(click) {
+            clickabilityMessage.innerHTML = "You have clicked and can begin drawing. Click again to stop drawing."
+        } else {
+            clickabilityMessage.innerHTML = "Click the screen to begin drawing."
+        }
+  }}
