@@ -1,71 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: beige;
 }
 
 h1 {
-    margin-bottom: 0px;
-    font-family: silkscreen, sans-serif;
-    font-size: 40px;
+  margin-bottom: 0px;
+  font-family: silkscreen, sans-serif;
+  font-size: 40px;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    gap: 15px;
-    font-family: silkscreen, sans-serif;
-    background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 15px;
+  font-family: silkscreen, sans-serif;
+  background-color: beige;
 }
 
 #sketch-container {
-    display: grid;
-    width: 500px;
-    height: 500px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-shadow: 5px 10px 10px;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 5px 10px 10px;
 }
 
 .footer {
-    width: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-    background-color: beige;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  background-color: beige;
 }
 
 .buttons {
-    border-radius: 2.5px;
-    background-color: grey;
-    color: black;
-    padding: 5px 15px;
-    font-family: silkscreen, sans-serif;
-    font-weight: 500;
+  border-radius: 2.5px;
+  background-color: grey;
+  color: black;
+  padding: 5px 15px;
+  font-family: silkscreen, sans-serif;
+  font-weight: 500;
 }
 
 .buttons:hover {
-    cursor: pointer;
-    filter: brightness(120%);
+  cursor: pointer;
+  filter: brightness(120%);
 }
 
 #user-click-ability {
-    width: 400px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: silkscreen, sans-serif;
-    margin-bottom: 10px;
-    margin-top: 0;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: silkscreen, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
+@media (max-width: 750px) {
+  h1 {
+    font-size: 35px;
+  }
+  .header {
+    width: 450px;
+  }
+  #user-click-ability {
+    width: 350px;
+    height: 40px;
+  }
+  #sketch-container {
+    width: 450px;
+    height: 450px;
+  }
+  .footer {
+    width: 450px;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+  .header {
+    width: 400px;
+    gap: 10px;
+  }
+  #user-click-ability {
+    width: 300px;
+    height: 35px;
+  }
+  #sketch-container {
+    width: 400px;
+    height: 400px;
+  }
+  .footer {
+    width: 400px;
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    width: 350px;
+    gap: 7.5px;
+  }
+  #user-click-ability {
+    height: 30px;
+  }
+  #sketch-container {
+    width: 350px;
+    height: 350px;
+  }
+  .footer {
+    width: 350px;
+  }
+  .buttons {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    width: 300px;
+    gap: 5px;
+  }
+  #sketch-container {
+    width: 300px;
+    height: 300px;
+  }
+  .footer {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  h1 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .header {
+    width: 250px;
+    gap: 2.5px;
+  }
+  #sketch-container {
+    width: 250px;
+    height: 250px;
+  }
+  .footer {
+    width: 250px;
+  }
+}
