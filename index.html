@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch Project</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <h1>Etch-A-Sketch!</h1>
     <div class="header">
-        <h4>Select Size of Drawing:</h4>
-        <button class="buttons" id="select-size">Select</button>
-        <p id="submit-feedback"></p>
+      <h4>Select Size of Drawing:</h4>
+      <button class="buttons" id="select-size">Select</button>
+      <p id="submit-feedback"></p>
     </div>
-    <p id="user-click-ability">Please click anywhere on the screen to begin drawing.</p>
-    <div id="sketch-container">
-
-    </div>
+    <p id="user-click-ability">
+      Please click anywhere on the screen to begin drawing.
+    </p>
+    <div id="sketch-container"></div>
     <div class="footer">
-        <button class="buttons" id="black-color-btn" onclick="chooseColor('black')">Black</button>
-        <button class="buttons" id="black-color-btn" onclick="chooseColor('random')">Random</button>
-        <button class="buttons" id="reset-btn" onclick="resetSketchPad()">Reset</button>
+      <button
+        class="buttons"
+        id="black-color-btn"
+        onclick="chooseColor('black')"
+      >
+        Black
+      </button>
+      <button
+        class="buttons"
+        id="black-color-btn"
+        onclick="chooseColor('random')"
+      >
+        Random
+      </button>
+      <button class="buttons" id="reset-btn" onclick="resetSketchPad()">
+        Reset
+      </button>
     </div>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
